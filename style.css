@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  background: linear-gradient(135deg, #fbeee6 0%, #f5d7c4 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #3d2c1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #dcc5b2;
+  height: 50vh;
+  width: 25vw;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  border: 1px solid #e6d3c5;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.amount {
+  margin-top: 1.5rem;
+}
+
+.amount p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.amount input {
+  border: 1px solid grey;
+  border-radius: 2px;
+  width: 90%;
+  padding: 8px 10px;
+  background: #fff;
+  font-size: 1.1rem;
+  transition: border 0.2s;
+}
+
+.amount input:focus {
+  outline: none;
+  border: 1.5px solid #d9a299;
+  background: #f9f6f2;
+}
+
+.selector {
+  display: flex;
+  height: 30px;
+  margin-top: 1rem;
+  justify-content: space-around;
+  padding: 1rem;
+  background: #f5e7db;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(220, 197, 178, 0.08);
+}
+
+.selector .opt,
+.selector select {
+  border: 1px solid grey;
+  border-radius: 2px;
+  cursor: pointer;
+  background: #fff;
+  font-size: 1rem;
+  padding: 4px 8px;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.selector select:focus {
+  outline: none;
+  border: 1.5px solid #d9a299;
+  box-shadow: 0 0 4px #d9a29933;
+}
+
+.selector img.flag {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #e6d3c5;
+  box-shadow: 0 1px 4px #dcc5b233;
+}
+
+.selector i {
+  color: #b97c6d;
+  font-size: 1.3rem;
+  margin: 0 0.5rem;
+  transition: color 0.2s;
+}
+
+.final {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.final .result {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #3d2c1e;
+  min-height: 1.5em;
+}
+
+.final button {
+  width: 90%;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #d9a299 60%, #e6b8a2 100%);
+  color: #fff;
+  box-shadow: 0 2px 8px #d9a29933;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.final button:hover {
+  background: linear-gradient(90deg, #e6b8a2 60%, #d9a299 100%);
+  box-shadow: 0 4px 16px #d9a29944;
+}
+
+.red {
+  color: #d32f2f;
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .container {
+    width: 90vw;
+    height: auto;
+    padding: 1rem;
+  }
+  .selector {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+  .final button {
+    width: 100%;
+  }
+}
